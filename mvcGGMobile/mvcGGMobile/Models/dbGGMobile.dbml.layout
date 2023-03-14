@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbGGMobile">
+  <DataContextMoniker Name="/dbGGMobileDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a518c944-519f-4ccf-b39c-d59be2337b85" absoluteBounds="3.5, 5, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/dbGGMobileDataContext/SanPham" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d4923f7-dee8-4928-aa24-c8ae47b9999e" absoluteBounds="3.515, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="adecff45-e98b-4ff6-ade7-708e8990b4aa" absoluteBounds="0.75, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/dbGGMobileDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdafbc68-cad1-4d50-b692-82b10ae58578" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd4f452e-68e5-4a96-90f8-68361bc8d963" absoluteBounds="0.75, 5.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/dbGGMobileDataContext/HangDT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="094c1181-e0ad-44a7-a413-f016398a3dfc" absoluteBounds="0.765, 5.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba22c930-1495-4ff1-80d3-76fe52e93404" absoluteBounds="3.5, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/dbGGMobileDataContext/DONDATHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af1de584-d4ac-4aed-96b3-16e9a8d31176" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c549108d-f730-461f-972f-0d1e79fc12a9" absoluteBounds="6.25, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbGGMobileDataContext/CHITIETDONHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b11237be-ca9c-43ab-9b20-fa34a31e3253" absoluteBounds="6.265, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.09699625651042); (3.5 : 6.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbGGMobileDataContext/HangDT/HangDT_SanPham" />
+      <nodes>
+        <classShapeMoniker Id="dd4f452e-68e5-4a96-90f8-68361bc8d963" />
+        <classShapeMoniker Id="a518c944-519f-4ccf-b39c-d59be2337b85" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.10659912109375); (3.5 : 2.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbGGMobileDataContext/KHACHHANG/KHACHHANG_DONDATHANG" />
+      <nodes>
+        <classShapeMoniker Id="adecff45-e98b-4ff6-ade7-708e8990b4aa" />
+        <classShapeMoniker Id="ba22c930-1495-4ff1-80d3-76fe52e93404" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.16429768880208); (6.25 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbGGMobileDataContext/DONDATHANG/DONDATHANG_CHITIETDONHANG" />
+      <nodes>
+        <classShapeMoniker Id="ba22c930-1495-4ff1-80d3-76fe52e93404" />
+        <classShapeMoniker Id="c549108d-f730-461f-972f-0d1e79fc12a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.17390055338542); (7.25 : 6.17390055338542); (7.25 : 2.95359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbGGMobileDataContext/SanPham/SanPham_CHITIETDONHANG" />
+      <nodes>
+        <classShapeMoniker Id="a518c944-519f-4ccf-b39c-d59be2337b85" />
+        <classShapeMoniker Id="c549108d-f730-461f-972f-0d1e79fc12a9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
